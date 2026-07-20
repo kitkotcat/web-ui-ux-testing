@@ -1,41 +1,38 @@
-# Web UI/UX Testing Portfolio
+# Manual Web Testing Portfolio
 
-Manual QA portfolio focused on web application testing.
-
-The repository contains practical test documentation, partially executed test suites, structured bug reports, UI and design validation, negative scenarios, traceability and DevTools findings.
+Practical Manual QA portfolio focused on web application testing, test design, documented execution results and defect analysis.
 
 ## Projects
 
-| Project | Testing areas | Main artifact |
-|---|---|---|
-| [Tor Store Web Testing](torstore/README.md) | Functional test design, smoke execution, UI/mockup validation, negative testing, responsive checks and DevTools analysis | [Excel QA report](torstore/artifacts/torstore-web-testing-report.xlsx) |
-| [Country Quiz Web Testing](country-quiz/README.md) | Functional, UI/UX, responsive, negative and accessibility-oriented testing | [Excel QA report — RU](country-quiz/artifacts/country-quiz-web-testing-report-RU.xlsx) |
+| Project | Testing scope | Report language | Main artifact |
+|---|---|---|---|
+| [Tor Store Web Testing](torstore/README.md) | Functional test design, smoke execution, UI/mockup validation, negative scenarios, initial responsive checks and Chrome DevTools analysis | English | [Excel QA report](torstore/artifacts/torstore-web-testing-report.xlsx) |
+| [Country Quiz Web Testing](country-quiz/README.md) | Functional, UI/UX, responsive, negative and keyboard-accessibility testing | Russian | [Excel QA report](country-quiz/artifacts/country-quiz-web-testing-report-RU.xlsx) |
 
 ## Skills demonstrated
 
-- manual functional and exploratory testing;
-- smoke and negative testing;
-- test-case and checklist preparation;
-- bug reporting with severity and priority;
-- traceability between requirements, tests and defects;
-- UI comparison with a design mockup;
-- responsive web testing;
-- Chrome DevTools Network, Console and Issues;
-- validation of forms, search, navigation, cart and checkout flows;
-- honest use of Passed, Failed, Blocked, Not Run and In Progress statuses.
+- manual functional and UI/UX testing;
+- smoke, negative and responsive testing;
+- preparation of test cases and checklists;
+- bug reporting with severity and priority assessment;
+- traceability between product areas, test cases and defects;
+- design-mockup comparison;
+- Chrome DevTools Network, Console and Issues analysis;
+- transparent reporting with `Passed`, `Failed`, `Not Run` and `In Progress` statuses.
 
-## Repository contents
+## Tools
 
-- [Tor Store project overview](torstore/README.md)
-- [Tor Store Excel report](torstore/artifacts/torstore-web-testing-report.xlsx)
-- [Evidence publication rules](torstore/evidence/README.md)
-- [Country Quiz project overview](country-quiz/README.md)
-- [Country Quiz Excel report — RU](country-quiz/artifacts/country-quiz-web-testing-report-RU.xlsx)
-- [Country Quiz evidence publication rules](country-quiz/evidence/README.md)
+- Google Chrome;
+- Chrome DevTools;
+- Microsoft Excel;
+- Git;
+- GitHub.
 
 ## Notes
 
-The tested applications are third-party or educational products used only for QA practice and portfolio demonstration.
+The repository contains independent practical QA portfolio projects performed against public test environments.
+
+Test results describe the application builds available at the time of execution. Planned or unconfirmed checks are not presented as passed.
 
 No credentials, authentication tokens, private user data, proprietary source code or application binaries are stored in this repository.
 
