@@ -1,0 +1,27 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Sensitive browser and network exports
+*.har
+cookies.txt
+storage-state.json
+auth.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Large evidence files
+*.mp4
+*.mov
+*.webm
+
+# Temporary files
+*.tmp
+*.swp
