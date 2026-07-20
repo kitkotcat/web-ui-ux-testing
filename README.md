@@ -9,6 +9,7 @@ The repository contains practical test documentation, partially executed test su
 | Project | Testing areas | Main artifact |
 |---|---|---|
 | [Tor Store Web Testing](torstore/README.md) | Functional test design, smoke execution, UI/mockup validation, negative testing, responsive checks and DevTools analysis | [Excel QA report](torstore/artifacts/torstore-web-testing-report.xlsx) |
+| [Country Quiz Web Testing](country-quiz/README.md) | Functional, UI/UX, responsive, negative and accessibility-oriented testing | [Excel QA report — RU](country-quiz/artifacts/country-quiz-web-testing-report-RU.xlsx) |
 
 ## Skills demonstrated
 
@@ -28,6 +29,9 @@ The repository contains practical test documentation, partially executed test su
 - [Tor Store project overview](torstore/README.md)
 - [Tor Store Excel report](torstore/artifacts/torstore-web-testing-report.xlsx)
 - [Evidence publication rules](torstore/evidence/README.md)
+- [Country Quiz project overview](country-quiz/README.md)
+- [Country Quiz Excel report — RU](country-quiz/artifacts/country-quiz-web-testing-report-RU.xlsx)
+- [Country Quiz evidence publication rules](country-quiz/evidence/README.md)
 
 ## Notes
 
