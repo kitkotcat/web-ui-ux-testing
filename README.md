@@ -1,26 +1,26 @@
-# Manual Web Testing Portfolio
+# Ручное тестирование веб-приложений
 
-Practical Manual QA portfolio focused on web application testing, test design, documented execution results and defect analysis.
+Практическое QA-портфолио по тестированию веб-приложений, test design, фиксации результатов и анализу дефектов.
 
-## Projects
+## Проекты
 
-| Project | Testing scope | Report language | Main artifact |
+| Проект | Что проверялось | Язык отчёта | Основной артефакт |
 |---|---|---|---|
-| [Tor Store Web Testing](torstore/README.md) | Functional test design, smoke execution, UI/mockup validation, negative scenarios, initial responsive checks and Chrome DevTools analysis | English | [Excel QA report](torstore/artifacts/torstore-web-testing-report.xlsx) |
-| [Country Quiz Web Testing](country-quiz/README.md) | Functional, UI/UX, responsive, negative and keyboard-accessibility testing | Russian | [Excel QA report](country-quiz/artifacts/country-quiz-web-testing-report-RU.xlsx) |
+| [Tor Store](torstore/README.md) | functional testing, smoke, UI/макет, negative scenarios, responsive checks, Chrome DevTools | Английский | [Excel QA report](torstore/artifacts/torstore-web-testing-report.xlsx) |
+| [Веб-квиз «Подобрать страну»](country-quiz/README.md) | functional, UI/UX, responsive, negative и keyboard-accessibility testing | Русский | [Excel QA report](country-quiz/artifacts/country-quiz-web-testing-report-RU.xlsx) |
 
-## Skills demonstrated
+## Навыки, показанные в проекте
 
-- manual functional and UI/UX testing;
-- smoke, negative and responsive testing;
-- preparation of test cases and checklists;
-- bug reporting with severity and priority assessment;
-- traceability between product areas, test cases and defects;
-- design-mockup comparison;
-- Chrome DevTools Network, Console and Issues analysis;
-- transparent reporting with `Passed`, `Failed`, `Not Run` and `In Progress` statuses.
+- ручное функциональное и UI/UX тестирование;
+- smoke, negative и responsive testing;
+- подготовка тест-кейсов и чек-листов;
+- оформление баг-репортов с Severity и Priority;
+- трассировка между функциональными областями, тест-кейсами и дефектами;
+- сравнение интерфейса с design mockup;
+- Chrome DevTools: Network, Console, Issues;
+- фиксация статусов `Passed`, `Failed`, `Not Run`, `In Progress`.
 
-## Tools
+## Инструменты
 
 - Google Chrome;
 - Chrome DevTools;
@@ -28,16 +28,15 @@ Practical Manual QA portfolio focused on web application testing, test design, d
 - Git;
 - GitHub.
 
-## Notes
+## Примечание
 
-The repository contains independent practical QA portfolio projects performed against public test environments.
+Репозиторий содержит независимые учебно-практические QA-проекты, выполненные на публичных тестовых средах.
 
-Test results describe the application builds available at the time of execution. Planned or unconfirmed checks are not presented as passed.
+Результаты относятся к версиям приложений, доступным на момент тестирования. Непроведённые или неподтверждённые проверки не обозначаются как Passed.
 
-No credentials, authentication tokens, private user data, proprietary source code or application binaries are stored in this repository.
+В репозитории нет credentials, authentication tokens, персональных данных, proprietary source code или application binaries.
 
-## Author
+## Автор
 
-**Ekaterina Peshkun**
-
-Junior Manual QA Engineer
+**Екатерина Пешкун**
+Junior QA Engineer

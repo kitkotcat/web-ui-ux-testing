@@ -1,20 +1,20 @@
-# Tor Store Test Evidence
+# Evidence по тестированию Tor Store
 
-This directory is intended for sanitized evidence supporting the Tor Store web testing report.
+Папка предназначена для обезличенных доказательств, связанных с отчётом по тестированию Tor Store.
 
-## Evidence types
+## Типы evidence
 
-The project may include:
+Можно добавлять:
 
-- screenshots of reproduced defects;
-- Chrome DevTools Network screenshots;
-- Console and Issues screenshots;
-- responsive-layout screenshots;
-- cropped comparisons between the website and design requirements;
-- sanitized response fragments;
-- short screen recordings.
+- screenshots воспроизведённых дефектов;
+- screenshots Chrome DevTools Network;
+- screenshots Console / Issues;
+- screenshots responsive layout;
+- обрезанные сравнения сайта с design requirements;
+- обезличенные response fragments;
+- короткие screen recordings.
 
-## Recommended naming convention
+## Рекомендуемые названия
 
 - `TS-BUG-001-header-mockup-mismatch.png`
 - `TS-BUG-002-javascript-resource-404.png`
@@ -24,31 +24,31 @@ The project may include:
 - `TS-BUG-006-form-label-accessibility.png`
 - `TS-BUG-007-main-page-mockup-mismatch.png`
 
-## Security and privacy checks
+## Безопасность перед публикацией
 
-Before evidence is committed, it must be checked for:
+Evidence необходимо проверить на отсутствие:
 
-- email addresses and passwords;
+- email и passwords;
 - session cookies;
 - authentication tokens;
 - API keys;
-- personal information;
-- browser history and unrelated tabs;
+- персональных данных;
+- browser history и посторонних tabs;
 - private URLs;
-- request headers containing authorization data;
-- confidential company or course materials.
+- request headers с authorization data;
+- конфиденциальных материалов компании или курса.
 
-## Repository rules
+## Правила репозитория
 
-- Raw HAR files are not committed because they may contain cookies and authorization data.
-- Large videos are stored externally.
-- Screenshots should be cropped to the relevant product area.
-- Sensitive values must be hidden or replaced with placeholders.
-- Each evidence item should reference the related Bug ID.
-- Design materials should not be published without permission.
+- Raw HAR не публикуются, так как могут содержать cookies и authorization data.
+- Крупные видео хранятся отдельно.
+- Screenshots обрезаются до релевантной области.
+- Sensitive values скрываются или заменяются placeholders.
+- Каждый evidence item должен ссылаться на соответствующий Bug ID.
+- Design materials не публикуются без разрешения.
 
-## Current status
+## Текущий статус
 
-Evidence references are recorded in the Excel report.
+Ссылки на evidence зафиксированы в Excel-отчёте.
 
-Additional screenshots should be added only after their contents, relevance and publication safety are verified.
+Дополнительные screenshots добавляются только после проверки содержимого, релевантности и безопасности публикации.

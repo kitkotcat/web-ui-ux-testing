@@ -1,130 +1,130 @@
-# Tor Store Web Application Testing
+# Тестирование веб-приложения Tor Store
 
-Independent practical project covering manual black-box testing and test design for the **Tor Store** web application.
+Независимый практический проект по ручному black-box тестированию и test design веб-приложения **Tor Store**.
 
-The project demonstrates functional testing, documented smoke execution, UI comparison with a supplied design mockup, negative test design, initial responsive checks and technical analysis with Chrome DevTools.
+Проект включает functional testing, документированный smoke-прогон, сравнение UI с макетом, negative test design, начальные responsive checks и технический анализ через Chrome DevTools.
 
-## Overview
+## Объект тестирования
 
-| Parameter | Value |
+| Параметр | Значение |
 |---|---|
-| Application | Tor Store |
-| Platform | Web |
-| Environment | Public test environment |
-| Tested target | `ts.red-promo.ru` |
-| Report updated | 2026-05-19 |
-| Approach | Manual black-box testing |
-| Browser | Google Chrome |
-| Operating system | Not recorded |
-| Report language | English |
+| Приложение | Tor Store |
+| Платформа | Web |
+| Окружение | Public test environment |
+| URL | `ts.red-promo.ru` |
+| Отчёт обновлён | 2026-05-19 |
+| Подход | Ручное black-box testing |
+| Браузер | Google Chrome |
+| OS | Не зафиксирована |
+| Язык исходного отчёта | Английский |
 
-## Test scope
+## Область тестирования
 
-The documentation covers:
+Документация покрывает:
 
-- home page and header;
-- navigation and catalog;
+- главную страницу и header;
+- navigation и catalog;
 - product cards;
 - Favorites;
-- cart and quantity controls;
+- cart и quantity controls;
 - checkout test design;
 - Search;
-- callback and authentication forms;
-- Contacts and footer;
-- UI comparison with a design mockup;
+- callback и authentication forms;
+- Contacts и footer;
+- сравнение UI с design mockup;
 - negative scenarios;
-- initial responsive checks;
-- Chrome DevTools Network, Console and Issues;
+- начальные responsive checks;
+- Chrome DevTools Network / Console / Issues;
 - accessibility observations.
 
-Some negative, cart, checkout and responsive scenarios were designed but not fully executed. Their statuses remain `Not Run` or `In Progress`.
+Часть negative, cart, checkout и responsive scenarios была спроектирована, но не выполнена полностью. Такие проверки оставлены со статусами `Not Run` или `In Progress`.
 
-## Test documentation
+## Тестовая документация
 
-| Artifact | Quantity |
+| Артефакт | Количество |
 |---|---:|
 | Smoke test cases | 22 |
 | Functional test cases | 51 |
 | Functional checklist items | 34 |
-| UI and mockup checks | 10 |
+| UI / mockup checks | 10 |
 | Negative test scenarios | 11 |
-| Structured bug reports | 7 |
+| Баг-репорты | 7 |
 
-## Smoke execution results
+## Результаты smoke-прогона
 
-| Status | Quantity |
+| Статус | Количество |
 |---|---:|
 | Passed | 4 |
 | Failed | 5 |
 | In Progress | 1 |
 | Not Run | 12 |
 
-The report uses `Passed` only when an actual result was observed. Unexecuted and incomplete checks remain explicitly marked.
+Статус `Passed` используется только для фактически выполненных проверок. Невыполненные и незавершённые сценарии отмечены отдельно.
 
-## Key findings
+## Основные дефекты
 
-### Functional and navigation
+### Functional / navigation
 
-- `BUG-003` — Search displays an incorrect product count and a contradictory empty-result message.
-- `BUG-004` — Social media icons redirect to the Contacts page instead of the corresponding external services.
+- `BUG-003` — Search показывает некорректное количество товаров и противоречивое сообщение об отсутствии результатов.
+- `BUG-004` — иконки социальных сетей ведут на страницу Contacts вместо соответствующих внешних сервисов.
 
 ### Technical
 
-- `BUG-002` — Required JavaScript resource `select22.min.js` returns `404 Not Found`.
-- `BUG-005` — Content Security Policy blocks JavaScript string evaluation.
-- `BUG-006` — Form controls are not correctly associated with their labels.
+- `BUG-002` — обязательный JavaScript resource `select22.min.js` возвращает `404 Not Found`.
+- `BUG-005` — Content Security Policy блокирует JavaScript string evaluation.
+- `BUG-006` — form controls некорректно связаны с labels.
 
-### UI and design
+### UI / design
 
-- `BUG-001` — Header menu items and telephone number do not match the supplied design mockup.
-- `BUG-007` — Main-page sections, banners, contact information and footer partially differ from the mockup.
+- `BUG-001` — пункты header menu и номер телефона не соответствуют предоставленному design mockup.
+- `BUG-007` — блоки главной страницы, banners, contact information и footer частично отличаются от макета.
 
-## Traceability
+## Трассировка
 
-The report links:
+В отчёте связаны:
 
-- product areas;
+- функциональные области;
 - functional test cases;
 - smoke scenarios;
 - Bug IDs;
 - execution statuses;
 - QA review comments.
 
-This separates confirmed results, failed behavior, incomplete execution, UI mismatches and technical findings.
+Это позволяет разделять подтверждённые результаты, failed behaviour, незавершённые проверки, UI mismatches и technical findings.
 
-## Tools and techniques
+## Инструменты и техники
 
 - Google Chrome;
 - Chrome DevTools Network;
-- Chrome DevTools Console and Issues;
-- manual functional testing;
-- test-case and checklist design;
-- positive and negative testing;
+- Chrome DevTools Console / Issues;
+- ручное functional testing;
+- test cases и checklists;
+- positive / negative testing;
 - initial responsive testing;
-- design-mockup comparison;
+- сравнение с design mockup;
 - bug reporting;
-- severity and priority assessment;
+- Severity / Priority assessment;
 - traceability matrix.
 
-## Artifacts
+## Артефакты
 
 - [Tor Store Web Testing Report](artifacts/torstore-web-testing-report.xlsx)
-- [Evidence publication rules](evidence/README.md)
+- [Правила публикации evidence](evidence/README.md)
 
-## Limitations
+## Ограничения
 
-- the complete functional suite was not executed;
-- cart and checkout flows require additional controlled execution;
-- responsive testing was not completed for all target widths;
-- a full browser and operating-system compatibility matrix was not tested;
-- the source code and server-side implementation were unavailable;
-- formal requirements were limited;
-- part of the UI validation used a supplied design mockup;
-- the tested website may change after the recorded execution;
-- the design PDF is not distributed in this repository.
+- полный functional suite не выполнен;
+- cart и checkout требуют дополнительного контролируемого прогона;
+- responsive testing не завершён для всех целевых ширин;
+- полная browser / OS compatibility matrix не проверялась;
+- source code и server-side implementation недоступны;
+- формальные требования были ограничены;
+- часть UI validation выполнялась по предоставленному макету;
+- тестируемый сайт может измениться после зафиксированного прогона;
+- design PDF в репозитории не распространяется.
 
-## Disclaimer
+## Дисклеймер
 
-This is an independent practical QA portfolio project.
+Это независимый практический QA portfolio project.
 
-The tested website, visual materials, product names and trademarks belong to their respective owners. The repository does not distribute proprietary source code or confidential materials.
+Тестируемый сайт, visual materials, product names и trademarks принадлежат соответствующим владельцам. Репозиторий не содержит proprietary source code или confidential materials.
